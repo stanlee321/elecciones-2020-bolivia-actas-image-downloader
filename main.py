@@ -37,7 +37,7 @@ def main(file_path:str):
 
     print(df.columns)
 
-    ids = list(set(df["ID_RECINTO"].to_list()))
+    ids = list(set(df["CODIGO_MESA"].to_list()))
 
     for _id in tqdm(ids):
         download_data(str(_id))
